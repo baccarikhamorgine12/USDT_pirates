@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>USDT Pirates 💎</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+<div class="bg"><div class="silhouette s1">⚔</div><div class="silhouette s2">🛡</div><div class="silhouette s3">⚔</div></div>
+
+<header class="topbar">
+  <button class="topbtn" id="close">×</button>
+  <strong>USDT Pirates <span>💎</span></strong>
+  <button class="topbtn">⋮</button>
+</header>
+
+<main>
+<section class="balance">
+  <div><small>YOUR BALANCE</small><b>₮ <span id="balance">2.37</span></b></div>
+  <span class="heart">♥</span>
+</section>
+
+<nav>
+ <button class="tab active" data-target="game">Game</button>
+ <button class="tab" data-target="deposit">Deposit</button>
+ <button class="tab" data-target="withdraw">Withdraw</button>
+ <button class="tab" data-target="referrals">Referrals</button>
+</nav>
+
+<section id="game" class="page active">
+ <div class="titlebar">WARRIOR MINING</div>
+ <div class="intro"><b>Choose your warrior</b><span>Each warrior mines USDT every day.</span></div>
+
+ <div class="warriors">
+  <article class="warrior free">
+   <div class="art a1"><span>⚔</span></div>
+   <div class="cardbody"><small>INCOME</small><div class="month">₮ <b>3.00</b><em>PER MONTH</em></div><h3>WARRIOR I</h3><p>Mining <b>₮ 0.10</b> <i>per day</i></p><button class="buy owned" data-id="1" data-price="0">FREE • MINING ACTIVE</button></div>
+  </article>
+  <article class="warrior">
+   <div class="art a2"><span>⚔</span></div>
+   <div class="cardbody"><small>INCOME</small><div class="month">₮ <b>10.80</b><em>PER MONTH</em></div><h3>WARRIOR II</h3><p>Mining <b>₮ 0.36</b> <i>per day</i></p><button class="buy" data-id="2" data-price="3">BUY • ₮ 3.00</button></div>
+  </article>
+  <article class="warrior">
+   <div class="art a3"><span>🛡</span></div>
+   <div class="cardbody"><small>INCOME</small><div class="month">₮ <b>21.00</b><em>PER MONTH</em></div><h3>WARRIOR III</h3><p>Mining <b>₮ 0.70</b> <i>per day</i></p><button class="buy" data-id="3" data-price="5">BUY • ₮ 5.00</button></div>
+  </article>
+  <article class="warrior">
+   <div class="art a4"><span>♜</span></div>
+   <div class="cardbody"><small>INCOME</small><div class="month">₮ <b>48.00</b><em>PER MONTH</em></div><h3>WARRIOR IV</h3><p>Mining <b>₮ 1.60</b> <i>per day</i></p><button class="buy" data-id="4" data-price="10">BUY • ₮ 10.00</button></div>
+  </article>
+  <article class="warrior">
+   <div class="art a5"><span>⚔</span></div>
+   <div class="cardbody"><small>INCOME</small><div class="month">₮ <b>135.00</b><em>PER MONTH</em></div><h3>WARRIOR V</h3><p>Mining <b>₮ 4.50</b> <i>per day</i></p><button class="buy" data-id="5" data-price="25">BUY • ₮ 25.00</button></div>
+  </article>
+  <article class="warrior">
+   <div class="art a6"><span>♛</span></div>
+   <div class="cardbody"><small>INCOME</small><div class="month">₮ <b>300.00</b><em>PER MONTH</em></div><h3>WARRIOR VI</h3><p>Mining <b>₮ 10.00</b> <i>per day</i></p><button class="buy" data-id="6" data-price="50">BUY • ₮ 50.00</button></div>
+  </article>
+ </div>
+ <p class="note">Mining values are displayed as game rewards. Real payments and server-side accounting will be connected in the backend.</p>
+</section>
+
+<section id="deposit" class="page">
+ <div class="titlebar">BALANCE REPLENISHMENT</div>
+ <div class="deposit"><h2>₮ USDT BEP-20</h2><small>Minimum: 1 USDT</small><label>DEPOSIT ADDRESS</label><div class="copyrow"><input id="addr" value="0x936327efdc5499a4441d4e2c7098179a43b93bb8" readonly><button onclick="copy('addr',this)">COPY</button></div><label>BINANCE PAY</label><div class="copyrow"><input id="binance" value="880300017" readonly><button onclick="copy('binance',this)">COPY</button></div><p>Send only USDT using the BEP-20 network to the displayed address.</p></div>
+</section>
+
+<section id="withdraw" class="page">
+ <div class="titlebar">WITHDRAW FUNDS</div>
+ <div class="deposit"><h2>₮ USDT BEP-20</h2><small>Minimum: 3 USDT</small><label>WALLET ADDRESS</label><input placeholder="0x..."><label>AMOUNT</label><input placeholder="USDT amount"><button class="wide">REQUEST WITHDRAWAL</button></div>
+</section>
+
+<section id="referrals" class="page">
+ <div class="titlebar">REFERRALS</div>
+ <div class="deposit"><label>YOUR REFERRAL LINK</label><div class="copyrow"><input id="ref" value="https://t.me/USDT_PiratesBot?start=ref_123" readonly><button onclick="copy('ref',this)">COPY</button></div><div class="refs"><b>15%</b><span>Referral reward from eligible replenishment</span></div></div>
+</section>
+</main>
+
+<button class="lang">🇬🇧 EN</button>
+<script src="app.js"></script>
+</body>
+</html>
